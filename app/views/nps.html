@@ -1,0 +1,58 @@
+<div class="admin">
+  {% extends "layout.html" %}
+
+  {% block page_title %}
+  APVS Admin
+  {% endblock %}
+
+  {% block content %}
+
+
+  <main id="content" role="main">
+
+    {% include "includes/phase_banner_beta.html" %}
+
+    <ul id="sub-nav">
+
+      <li><a href="index">Dashboard</a></li>
+      <li>
+        <a href="nps.html" class="active">NPS</a>
+      </li>
+    </ul>
+
+    <div class="filter-year">
+      <div class="inline-block">
+      <label class="form-label" for="select-year">Region:</label>
+      <select class="form-control" id="select-year">
+        <option>NPS South East and Eastern</option>
+        <option>NPS South East and Eastern</option>
+        <option selected>NPS South East and Eastern</option>
+        <option>NPS South East and Eastern</option>
+      </select>
+      </div>
+      <div class="inline-block">
+        <label class="form-label" for="form-control">From: </label>
+        <input class="form-control" id="fromDate" type="text">
+      </div>
+      <div class="inline-block">
+        <label class="form-label" for="form-control">To: </label>
+        <input class="form-control" id="toDate" type="text">
+      </div>
+      <input type="submit" class="button"  value="Refresh" />
+    </div>
+
+    <ul class="sub-tabs">
+      <li><a href="nps" class="active">Details</a></li>
+      <li><a href="capacityLineChart">Capacity (Line Chart)</a></li>
+      <li><a href="casesBarChart">Cases (Bar Chart)</a></li>
+      <li><a href="nps">Capacity (By Tier)</a></li>
+      <li><a href="nps">Capacity Role</a></li>
+      <li><a href="casesLineChart">Cases (Line Chart)</a></li>
+      <li><a href="nps">Sentence Components (Line Chart)</a></li>
+      <li><a href="nps">Sentence Components (By Type)</a></li>
+    </ul>
+
+</main>
+{% endblock %}
+
+</div>
