@@ -26,7 +26,7 @@ useHttps = useHttps.toLowerCase()
 // Authenticate against the environment-provided credentials, if running
 // the app in production (Heroku, effectively)
 if (env === 'production' && useAuth === 'true') {
-  app.use(utils.basicAuth(username, password))
+  app.use(utils.basicAuth("username", "password"))
 }
 
 // Application settings
