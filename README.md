@@ -2,6 +2,6 @@
 
 This repository is forked off [alphagov/govuk_prototype_kit](https://github.com/alphagov/govuk_prototype_kit).
 
-It holds a UX prototype of the Assisted Prison Visits Scheme alpha, allowing user research of service and it's screens.
+It holds a UX prototype of the Ministry of Justice Workload Management Tool. Used for the bid.
 
 # mojwmt
