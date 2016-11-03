@@ -53,7 +53,6 @@ span.adminLinks li img {
 
 .summaryBlocks {
   margin-top: 20px;
-  border-top: 1px solid #bfc1c3;
 }
 
 .summaryBlocks h2 {
@@ -262,4 +261,17 @@ span.adminLinks li img {
 .filter-year .button {
   bottom: -24px;
   margin-left: -75px;
+}
+
+.username {
+  color: white;
+  float: right;
+  font-weight: 400;
+}
+
+.username::after {
+  content: "\00a0\00a0\25BC";
+  font-size: 10px;
+  position: relative;
+  top: -0.3em;
 }

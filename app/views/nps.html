@@ -2,7 +2,7 @@
   {% extends "layout.html" %}
 
   {% block page_title %}
-  APVS Admin
+  MOJ Workload Management Tool
   {% endblock %}
 
   {% block content %}
@@ -14,11 +14,14 @@
 
     <ul id="sub-nav">
 
-      <li><a href="index">Dashboard</a></li>
-      <li>
-        <a href="nps.html" class="active">NPS</a>
-      </li>
-    </ul>
+        <li><a href="index">Dashboard</a></li>
+        <li><a href="nps.html">Team</a></li>
+        <li><a href="nps.html">LDU</a></li>
+        <li><a href="nps.html">Region</a></li>
+        <li><a href="nps.html" class="active">NPS</a></li>
+        <li><a href="nps.html">Reporting</a></li>
+
+      </ul>
 
     <div class="filter-year">
       <div class="inline-block">
@@ -51,6 +54,11 @@
       <li><a href="nps">Sentence Components (Line Chart)</a></li>
       <li><a href="nps">Sentence Components (By Type)</a></li>
     </ul>
+
+    <p>Tabs that work: </p>
+    <li><a href="capacityLineChart"> Capacity (Line Chart)</a></li>
+    <li><a href="casesBarChart"> Cases (Bar Chart)</a></li>
+    <li><a href="casesLineChart"> Cases (Line Chart)</a></li>
 
 </main>
 {% endblock %}

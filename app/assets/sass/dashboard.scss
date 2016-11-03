@@ -83,7 +83,6 @@ span.adminLinks {
 .summaryBlocks {
     @include blockTitle;
     margin-top: 20px;
-    border-top: $summaryBlocks-border;
 
     @include respond-to(handhelds) {
       margin-top: 60px;
@@ -261,5 +260,17 @@ span.adminLinks {
   .button {
     bottom: -24px;
     margin-left: -75px;
+  }
+}
+
+.username {
+  color: white;
+  float: right;
+  font-weight: 400;
+  &::after {
+      content: "\00a0\00a0\25BC";
+      font-size: 10px;
+      position: relative;
+      top: -0.3em;
   }
 }
